@@ -1,0 +1,16 @@
+sentence-transformers
+bm25s
+PyStemmer
+numpy
+pandas
+tqdm
+
+# Generation node (pick one path):
+anthropic        # if using Claude for the summary
+openai           # if using local Ollama's OpenAI-compatible endpoint
+
+# Benchmark / eval (eval_set.py + evaluate.py):
+langchain-openai>=0.2  # drives the DeepSeek (OpenAI-compatible) client
+ragas==0.2.15          # context precision / recall metrics (LLM-judged)
+rapidfuzz>=3.0         # string-similarity backend for non-LLM RAGAS recall
+datasets>=2.0          # ragas dependency

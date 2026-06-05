@@ -1,0 +1,6 @@
+# FoodGraph -- the LangGraph capstone (orchestration only; no models of its own)
+langgraph>=0.2          # StateGraph + conditional edges + MemorySaver
+langsmith>=0.3          # tracing (env-gated; set LANGSMITH_API_KEY to record)
+# The seams come from the sibling components -- install their requirements too:
+#   FoodVLM/requirements.txt  (mlx-vlm, datasets, Pillow)
+#   FoodRAG/requirements.txt  (sentence-transformers, bm25s, langchain-openai, ...)

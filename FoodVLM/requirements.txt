@@ -1,0 +1,4 @@
+# FoodVLM — perception component (Apple Silicon / MLX)
+mlx-vlm>=0.6.1          # InternVL3-8B 4-bit inference via MLX
+datasets>=4.0           # streaming Food-101 eyeball samples (fetch_samples.py)
+Pillow                  # image decode/convert for the sample fetch
