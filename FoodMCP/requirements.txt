@@ -1,0 +1,6 @@
+# FoodMCP adds the MCP server SDK on top of FoodRAG's deps.
+# Install FoodRAG/requirements.txt first (Retriever, embedder, BM25, reranker).
+mcp[cli]>=1.27.0
+
+# Only needed for agent_demo.py (loads the MCP tool into a LangGraph agent).
+langchain-mcp-adapters>=0.2.0
